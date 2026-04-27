@@ -1,0 +1,476 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Execução bancária contra empresa: como se defender | Victor Bellotti Advocacia</title>
+  <meta name="description" content="Banco bloqueou sua conta PJ? Penhora de faturamento pode paralisar o negócio. Saiba como usar os Embargos à Execução, o princípio da menor onerosidade e defender o patrimônio da empresa.">
+  <link rel="canonical" href="https://victorbellotti.adv.br/artigos/execucao-bancaria-empresa-como-se-defender.html">
+  <meta name="keywords" content="execução contra empresa banco, penhora de faturamento conta pj, embargos à execução ccb, dano moral empresa bloqueio judicial, fraude à execução sócio pj">
+  <link rel="icon" type="image/png" href="../assets/logo-icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <style>
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;margin:2rem 0}
+    .stat-card{background:var(--color-off-white);border:1px solid var(--color-border);border-top:3px solid var(--color-teal);border-radius:10px;padding:1.25rem 1rem;text-align:center}
+    .stat-card__number{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--color-teal);line-height:1;display:block}
+    .stat-card__label{font-size:.8rem;color:var(--color-navy-600);margin-top:.4rem;line-height:1.35;display:block}
+    .alert-box{border-radius:10px;padding:1.1rem 1.25rem;margin:1.5rem 0;display:flex;gap:.85rem;align-items:flex-start}
+    .alert-box--info{background:#e8f4f8;border-left:4px solid var(--color-teal)}
+    .alert-box--aviso{background:#fff8e1;border-left:4px solid #f59e0b}
+    .alert-box--erro{background:#fef2f2;border-left:4px solid #ef4444}
+    .alert-box__icon{flex-shrink:0;width:20px;height:20px;margin-top:2px}
+    .alert-box--info .alert-box__icon{color:var(--color-teal)}
+    .alert-box--aviso .alert-box__icon{color:#f59e0b}
+    .alert-box--erro .alert-box__icon{color:#ef4444}
+    .alert-box__body{flex:1}
+    .alert-box__title{font-weight:600;font-size:.95rem;margin:0 0 .3rem;color:var(--color-navy-800)}
+    .alert-box__text{font-size:.9rem;color:var(--color-navy-600);margin:0;line-height:1.55}
+    .steps-list{list-style:none;padding:0;margin:1.5rem 0;display:flex;flex-direction:column;gap:1rem}
+    .steps-list__item{display:flex;gap:1rem;align-items:flex-start}
+    .steps-list__num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--color-teal);color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-top:1px}
+    .steps-list__body{flex:1}
+    .steps-list__title{font-weight:600;font-size:.95rem;color:var(--color-navy-800);margin:0 0 .25rem}
+    .steps-list__desc{font-size:.88rem;color:var(--color-navy-600);margin:0;line-height:1.55}
+    .case-box{background:linear-gradient(135deg,#f0fafa 0%,#e8f4f8 100%);border:1px solid rgba(0,128,128,.2);border-radius:12px;padding:1.5rem;margin:1.75rem 0}
+    .case-box__header{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
+    .case-box__icon{width:28px;height:28px;background:var(--color-teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .case-box__icon svg{width:15px;height:15px;color:#fff}
+    .case-box__label{font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--color-teal-dark)}
+    .case-box__title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--color-navy-800);margin:0 0 .6rem}
+    .case-box__text{font-size:.9rem;color:var(--color-navy-600);line-height:1.6;margin:0}
+    .faq-item-art{border:1px solid var(--color-border);border-radius:10px;margin-bottom:.75rem;overflow:hidden}
+    .faq-item-art summary{padding:1rem 1.1rem;font-weight:600;font-size:.95rem;color:var(--color-navy-800);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.75rem}
+    .faq-item-art summary::-webkit-details-marker{display:none}
+    .faq-item-art summary::after{content:'';flex-shrink:0;width:18px;height:18px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23008080' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:contain;transition:transform .25s ease}
+    .faq-item-art[open] summary::after{transform:rotate(180deg)}
+    .faq-item-art[open] summary{color:var(--color-teal)}
+    .faq-item-art__body{padding:0 1.1rem 1rem;font-size:.9rem;color:var(--color-navy-600);line-height:1.65}
+    .checklist-container{background:var(--color-off-white);border:1px solid var(--color-border);border-radius:12px;padding:1.5rem;margin:2rem 0}
+    .checklist-container h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--color-navy-800);margin:0 0 .5rem}
+    .checklist-progress-bar{height:6px;background:var(--color-border);border-radius:99px;margin-bottom:1.25rem;overflow:hidden}
+    .checklist-progress-fill{height:100%;background:var(--color-teal);border-radius:99px;width:0%;transition:width .35s ease}
+    .checklist-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem}
+    .checklist-items label{display:flex;align-items:flex-start;gap:.7rem;cursor:pointer;font-size:.9rem;color:var(--color-navy-600);line-height:1.45}
+    .checklist-items input[type="checkbox"]{flex-shrink:0;width:18px;height:18px;margin-top:1px;accent-color:var(--color-teal);cursor:pointer}
+    .checklist-items input[type="checkbox"]:checked+span{text-decoration:line-through;opacity:.55}
+    .checklist-progress-label{font-size:.8rem;color:var(--color-navy-600);margin-bottom:.4rem;display:block}
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo" aria-label="Victor Bellotti Advocacia — início">
+          <img src="../assets/logo-horizontal.png" alt="Victor Bellotti Advocacia">
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Navegação principal">
+          <a href="../index.html#inicio">INÍCIO</a>
+          <a href="../index.html#quem-sou">QUEM SOU</a>
+          <div class="nav-dropdown">
+            <a href="../index.html#solucoes" class="nav-dropdown__trigger">SOLUÇÕES <i data-lucide="chevron-down" aria-hidden="true"></i></a>
+            <div class="nav-dropdown__menu">
+              <a href="../solucoes/fraudes-bancarias.html">Fraudes e Golpes Bancários</a>
+              <a href="../solucoes/cobrancas-abusivas.html">Cobranças Abusivas em Contratos PJ</a>
+              <a href="../solucoes/reestruturacao-dividas.html">Reestruturação de Dívidas</a>
+              <a href="../solucoes/consultoria-pre-contratacao.html">Consultoria Pré-Contratação</a>
+              <a href="../solucoes/execucoes-bancarias.html">Execuções Bancárias</a>
+              <a href="../solucoes/garantias-e-avais.html">Garantias e Avais</a>
+            </div>
+          </div>
+          <a href="../etica-e-transparencia.html">ÉTICA</a>
+          <a href="index.html" class="active">ARTIGOS</a>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="../index.html#contato">CONTATO</a>
+        </nav>
+        <div class="header__actions">
+          <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+    <div class="mobile-menu__overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu__drawer">
+      <a href="../index.html#inicio">Início</a>
+      <a href="../index.html#quem-sou">Quem Sou</a>
+      <a href="../index.html#solucoes">Soluções</a>
+      <a href="../etica-e-transparencia.html">Ética</a>
+      <a href="index.html">Artigos</a>
+      <a href="../index.html#localizacao">Localização</a>
+      <a href="../index.html#faq">Perguntas Frequentes</a>
+      <a href="../index.html#contato">Contato</a>
+      <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        Falar pelo WhatsApp
+      </a>
+    </nav>
+  </div>
+
+  <section class="article-hero" style="--hero-image: url('../assets/artigos/execucao-bancaria-empresa-como-se-defender.jpg')">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <nav class="article-hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Início</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html">Artigos</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Execução bancária PJ</span>
+      </nav>
+      <span class="article-hero-badge">Direito Bancário Empresarial</span>
+      <h1 class="article-hero-title">Execução bancária contra empresa: quando o banco pode agir e como se defender</h1>
+    </div>
+  </section>
+
+  <div class="article-back-bar">
+    <div class="article-back-inner">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Voltar para Artigos
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-layout">
+      <article class="article-content">
+
+        <p class="article-lead">A execução bancária age sem avisar: um dia seu caixa está normal, no dia seguinte todas as contas estão bloqueadas por ordem judicial. A Cédula de Crédito Bancário dá ao banco um atalho no judiciário — mas a lei prevê 15 dias para apresentar Embargos à Execução e reverter o bloqueio. Cada hora conta.</p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="30" data-suffix="%">30%</span>
+            <span class="stat-card__label">das micro e pequenas empresas brasileiras operam com endividamento bancário em atraso (SEBRAE)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="15" data-suffix=" dias">15 dias</span>
+            <span class="stat-card__label">prazo peremptório para apresentar Embargos à Execução — perder esse prazo é perder o direito de defesa</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="30" data-prefix="até R$" data-suffix="k">até R$30k</span>
+            <span class="stat-card__label">indenizações por bloqueio de conta executada com dívida já quitada ou em acordo</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="5" data-suffix="%">5%</span>
+            <span class="stat-card__label">percentual mínimo de penhora de faturamento reconhecido pelos tribunais sem decretar insolvência</span>
+          </div>
+        </div>
+
+        <h2>Como funciona a execução bancária contra empresa</h2>
+        <p>A execução bancária ganha velocidade extrema porque os bancos amparam suas cobranças em títulos com <strong>força executiva imediata</strong>. A Cédula de Crédito Bancário (CCB) é o instrumento mais utilizado. Diferente de uma ação de cobrança comum — onde o banco precisaria provar a dívida em processo demorado — a execução pula essa fase:</p>
+        <ul>
+          <li>O banco apresenta a CCB ao juiz e pede a penhora dos ativos da empresa</li>
+          <li>O juiz determina o pagamento em 3 dias, sob pena de bloqueio eletrônico via sistemas do CNJ (Sisbajud)</li>
+          <li>O caixa da empresa é congelado antes mesmo que os sócios sejam intimados formalmente</li>
+          <li>Apenas após o bloqueio a empresa recebe a citação e tem 15 dias para apresentar defesa</li>
+        </ul>
+
+        <div class="alert-box alert-box--info">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">CPC Art. 805: o princípio da menor onerosidade é sua principal defesa</p>
+            <p class="alert-box__text">Quando por vários meios o credor puder promover a execução, o juiz mandará que se faça pelo modo menos gravoso para o executado. Se o bloqueio total do caixa inviabiliza a atividade produtiva, sua defesa utilizará esse artigo para solicitar a substituição do bloqueio financeiro por bens do imobilizado ou por percentual mínimo do faturamento mensal — garantindo a sobrevivência da operação.</p>
+          </div>
+        </div>
+
+        <h2>Casos reais: da penhora à paralisação do negócio</h2>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="case-box__label">Caso real</span>
+          </div>
+          <p class="case-box__title">Paulo — distribuidora de peças automotivas em São Paulo</p>
+          <p class="case-box__text">Paulo assinou uma CCB para expandir o galpão logístico. Durante uma crise setorial, a distribuidora atrasou três parcelas. Sem tentativa prévia de renegociação amigável, o banco ajuizou a execução do saldo total — com juros e multas pesadas — e obteve o bloqueio das contas. Da noite para o dia, Paulo não conseguiu despachar caminhões pois não havia saldo livre para pagar fretes terceirizados e impostos das notas fiscais, paralisando toda a distribuição de peças.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="case-box__label">Caso real</span>
+          </div>
+          <p class="case-box__title">Ana — clínica odontológica de grande porte em Minas Gerais</p>
+          <p class="case-box__text">Ana utilizou crédito empresarial atrelado aos recebíveis da clínica para cobrir equipamentos de imagem. Com a oscilação do faturamento e o atraso da dívida, o banco ingressou com execução e solicitou penhora direta na fonte pagadora. A justiça determinou que operadoras de maquininha e planos de saúde desviassem 100% dos recebimentos para uma conta judicial. A trava absoluta asfixiou o caixa, impedindo Ana de pagar dentistas e insumos — levando o negócio à beira da insolvência em menos de um mês.</p>
+        </div>
+
+        <h2>Quando a execução é abusiva e o banco deve indenizar</h2>
+        <p>O banco tem o direito de cobrar dívidas, mas esse direito encontra limites intransponíveis no princípio da preservação da empresa e na responsabilidade civil. Três situações condenadas sistematicamente pelos tribunais:</p>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 1</span>
+          </div>
+          <p class="case-box__title">Execução de dívida já quitada ou em acordo homologado</p>
+          <p class="case-box__text">Indústria têxtil negociou administrativamente e pagou a primeira parcela. Falha de comunicação interna no banco fez o jurídico prosseguir com a execução, bloqueando as contas via Sisbajud às vésperas do pagamento de salários. A justiça desfez o bloqueio e condenou o banco a pagar <strong>R$ 30.000 em danos morais</strong> pelo risco social imposto aos funcionários e pelo abalo de crédito injustificado.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 2</span>
+          </div>
+          <p class="case-box__title">Penhora integral do faturamento inviabilizando a operação</p>
+          <p class="case-box__text">Banco executou dívida e reteve 100% das vendas em cartão de uma rede de supermercados, zerando o caixa. Os tribunais reverteram com urgência, fixando que a penhora de faturamento deve respeitar limites razoáveis de 5% a 15%. Pelo ato de asfixia desproporcional, o banco foi condenado a pagar <strong>R$ 25.000 em danos morais</strong>, além dos prejuízos materiais das mercadorias perecíveis perdidas.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 3</span>
+          </div>
+          <p class="case-box__title">Bloqueio mantido após oferecimento de bens em garantia</p>
+          <p class="case-box__text">Empresa de engenharia ofertou tratores e maquinário de alto valor para substituir o bloqueio financeiro. O banco recusou sem justificativa plausível. O tribunal reconheceu abuso de direito e ofensa ao princípio da menor onerosidade, forçou a liberação do caixa e estabeleceu <strong>R$ 20.000 em indenização moral</strong> pela paralisação indevida das obras.</p>
+        </div>
+
+        <h2>7 passos para responder à execução bancária</h2>
+        <ol class="steps-list">
+          <li class="steps-list__item">
+            <span class="steps-list__num">1</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Exija do banco a planilha evolutiva detalhada do saldo devedor</p>
+              <p class="steps-list__desc">Solicite à central de atendimento ou à gerência a planilha mostrando como o saldo inicial emprestado transformou-se no montante executado. Essa planilha é essencial para identificar juros ilegais e capitalização proibida que inflariam o valor cobrado.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">2</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Verifique apontamentos no Registrato do Banco Central e e-CAC</p>
+              <p class="steps-list__desc">Acesse o Registrato para mapear a extensão exata dos apontamentos negativos e o e-CAC da Receita Federal para verificar se há restrições ativas sobre o CNPJ derivadas dessa cobrança específica — isso define a urgência da ação.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">3</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Levante os valores protegidos: folha salarial e tributos inadiáveis</p>
+              <p class="steps-list__desc">Faça levantamento contábil de urgência separando extratos que comprovem que os valores bloqueados são destinados à folha de salários ou tributos federais inadiáveis — a lei protege parte desses recursos operacionais essenciais de penhora.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">4</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Inventarie bens do imobilizado para oferecer como garantia substitutiva</p>
+              <p class="steps-list__desc">Relate veículos, equipamentos industriais e estoques que possuam liquidez mercadológica. Esses bens podem ser ofertados ao juiz como garantia substitutiva para liberar o caixa financeiro, invocando o princípio da menor onerosidade (CPC Art. 805).</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">5</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Conteste administrativamente na Ouvidoria do banco executante</p>
+              <p class="steps-list__desc">Registre contestação documentada informando que a penhora inviabiliza o funcionamento basal da empresa e exigindo análise de proposta de composição ou redução do bloqueio. Anote o protocolo — a negativa reforça a tese de abuso na ação judicial.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">6</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Notifique parceiros e redirecione recebimentos para outro banco</p>
+              <p class="steps-list__desc">Informe transparentemente clientes estratégicos sobre a contingência e altere provisoriamente o fluxo de recebimentos para contas de outras instituições não envolvidas no litígio — garantindo a sobrevivência temporária do giro comercial durante o processo.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">7</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Contrate banca especializada e apresente Embargos à Execução em 15 dias</p>
+              <p class="steps-list__desc">O prazo de Embargos é peremptório: 15 dias úteis a partir da citação. Advogados especialistas apresentam os bens substitutivos, auditam o saldo devedor para expurgar juros ilegais e solicitam o desbloqueio liminar do capital de giro junto ao juiz da causa.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h2>Erros que destroem a defesa empresarial</h2>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 1: esvaziar o patrimônio para fugir da execução</p>
+            <p class="alert-box__text">Transferir recursos para contas de parentes, alienar veículos às pressas ou fechar o CNPJ para abrir outro configura fraude à execução. O banco solicitará a desconsideração da personalidade jurídica — e o bloqueio atinge o patrimônio pessoal dos sócios: residências, contas e investimentos pessoais.</p>
+          </div>
+        </div>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 2: guardar a citação judicial na gaveta</p>
+            <p class="alert-box__text">O prazo de Embargos à Execução é de apenas 15 dias úteis — peremptório e inegociável. Perder essa janela significa renunciar ao direito de questionar taxas de juros extorsivas, vendas casadas ou bloqueios ilegais, entregando o patrimônio nas mãos das exigências do banco sem defesa.</p>
+          </div>
+        </div>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 3: assinar confissão de dívida com o gerente para desbloquear a conta</p>
+            <p class="alert-box__text">O banco exige a assinatura de nova confissão englobando juros de mora processuais e honorários advocatícios altíssimos. Assinar esse documento às cegas convalida anos de cobranças irregulares e sela um acordo impagável — gerando nova inadimplência meses depois e um ciclo interminável.</p>
+          </div>
+        </div>
+
+        <h2>Perguntas frequentes</h2>
+
+        <details class="faq-item-art">
+          <summary>O banco pode bloquear a conta PJ sem nenhum aviso prévio?</summary>
+          <div class="faq-item-art__body">
+            <p>Sim. Nas execuções baseadas em CCBs, o banco pede ao juiz a penhora eletrônica online logo no início do processo, antes mesmo que a empresa seja intimada formalmente para apresentar defesa — visando surpreender e garantir o dinheiro. A citação chega depois do bloqueio.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>Minha empresa perde veículos e imóveis imediatamente após o início da ação?</summary>
+          <div class="faq-item-art__body">
+            <p>Não. A expropriação efetiva e os leilões de bens do imobilizado são os últimos estágios do processo executivo. A empresa tem direito constitucional à ampla defesa e aos Embargos processuais, que podem suspender leilões e arrastar as discussões técnicas por vários anos até a decisão final.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>Assinamos o contrato livremente — ainda podemos questionar o valor cobrado?</summary>
+          <div class="faq-item-art__body">
+            <p>Perfeitamente. O fato de os sócios terem assinado a CCB não os proíbe de acionar o judiciário para expurgar ilegalidades. A Súmula 286 do STJ garante que a renegociação ou confissão de dívida não impede a discussão sobre ilegalidades dos contratos anteriores. O juiz pode revisar planilhas e reduzir o montante a patamares legais.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>O que acontece se nossa empresa não tiver saldo em caixa para o banco penhorar?</summary>
+          <div class="faq-item-art__body">
+            <p>Quando a busca eletrônica de dinheiro retorna zerada, o banco passa a solicitar ao juiz buscas alternativas: penhora de faturamento das maquininhas de cartão, bloqueio de recebíveis em contas-garantia e apreensão da frota operacional registrada no Detran.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>Podemos continuar operando normalmente durante a execução?</summary>
+          <div class="faq-item-art__body">
+            <p>Sim. A existência de um processo de execução não determina o fechamento ou a falência da empresa. Contudo, para continuar faturando e pagando funcionários, é necessário estruturar uma estratégia jurídica para substituir os bloqueios de conta corrente por garantias reais ou fianças que liberem o fluxo operacional.</p>
+          </div>
+        </details>
+
+        <div class="checklist-container">
+          <h3>Checklist: defesa contra execução bancária</h3>
+          <span class="checklist-progress-label" id="checklist-execucao-bancaria-label">0 de 10 itens concluídos</span>
+          <div class="checklist-progress-bar">
+            <div class="checklist-progress-fill" id="checklist-execucao-bancaria-fill"></div>
+          </div>
+          <ul class="checklist-items" id="checklist-execucao-bancaria">
+            <li><label><input type="checkbox"> <span>Recuperei as vias integrais e assinadas dos contratos executados pelo banco</span></label></li>
+            <li><label><input type="checkbox"> <span>Emiti relatório de apontamentos corporativos no sistema federal Registrato</span></label></li>
+            <li><label><input type="checkbox"> <span>Exportei extratos identificando recebimentos atrelados à folha salarial inadiável</span></label></li>
+            <li><label><input type="checkbox"> <span>Solicitei planilha pormenorizando a composição exata do saldo devedor cobrado</span></label></li>
+            <li><label><input type="checkbox"> <span>Levantei o rol patrimonial para oferecer maquinário como garantia substitutiva</span></label></li>
+            <li><label><input type="checkbox"> <span>Interrompi movimentações estratégicas na conta vinculada ao banco credor</span></label></li>
+            <li><label><input type="checkbox"> <span>Registrei a data exata de recebimento do mandado de citação judicial</span></label></li>
+            <li><label><input type="checkbox"> <span>Não esvaziou contas correntes transferindo para CPFs dos fundadores</span></label></li>
+            <li><label><input type="checkbox"> <span>Não assinei confissões de dívida para desbloquear o internet banking</span></label></li>
+            <li><label><input type="checkbox"> <span>Acionei banca jurídica corporativa para apresentar Embargos em até 15 dias</span></label></li>
+          </ul>
+        </div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="article-sidebar__cta">
+          <div class="article-sidebar__cta-icon" aria-hidden="true">
+            <i data-lucide="gavel"></i>
+          </div>
+          <h3 class="article-sidebar__cta-title">Sua empresa foi executada pelo banco?</h3>
+          <p class="article-sidebar__cta-text">Penhora de contas e bloqueio de faturamento podem ser revertidos. Mas o prazo dos Embargos à Execução é de apenas 15 dias úteis. Aja agora.</p>
+          <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            Falar pelo WhatsApp
+          </a>
+          <a href="../index.html#contato" class="btn btn-outline-teal" style="width:100%;justify-content:center;margin-top:.6rem;">
+            Enviar mensagem
+          </a>
+          <p class="article-sidebar__cta-disclaimer">Consulta inicial gratuita &bull; Atendimento online</p>
+        </div>
+
+        <a href="index.html" class="back-link" style="display:flex;align-items:center;gap:.4rem;margin:1rem 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Voltar para Artigos
+        </a>
+
+        <div class="related-articles">
+          <h4 class="related-articles__title">Artigos relacionados</h4>
+          <ul class="related-articles__list">
+            <li>
+              <a href="contrato-capital-de-giro-clausulas-prejudiciais.html" class="related-articles__link">
+                <div class="related-articles__img" style="background-image: url('../assets/artigos/contrato-capital-de-giro-clausulas-prejudiciais.jpg')"></div>
+                <div class="related-articles__info">
+                  <span class="related-articles__link-cat">Direito Bancário Empresarial</span>
+                  <span class="related-articles__link-title">Contrato de capital de giro: 5 cláusulas que podem prejudicar seu negócio</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="reestruturacao-divida-bancaria-empresarial.html" class="related-articles__link">
+                <div class="related-articles__img" style="background-image: url('../assets/artigos/reestruturacao-divida-bancaria-empresarial.jpg')"></div>
+                <div class="related-articles__info">
+                  <span class="related-articles__link-cat">Direito Bancário Empresarial</span>
+                  <span class="related-articles__link-title">Reestruturação de dívida bancária empresarial: como negociar sem se prejudicar</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="../assets/logo-horizontal.png" alt="Victor Bellotti Advocacia" class="footer__logo">
+          <p class="footer__tagline">Advocacia especializada em Direito Bancário Empresarial, com experiência de mercado financeiro.</p>
+          <div class="footer__socials">
+            <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="mailto:contato@victorbellotti.adv.br" class="footer__social" aria-label="E-mail"><i data-lucide="mail" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/victorbellottiadv" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Links Rápidos</p>
+          <nav class="footer__links" aria-label="Links rápidos">
+            <a href="../index.html#inicio">Início</a>
+            <a href="../index.html#quem-sou">Quem Sou</a>
+            <a href="../index.html#solucoes">Soluções</a>
+            <a href="../etica-e-transparencia.html">Ética e Transparência</a>
+            <a href="index.html">Artigos</a>
+            <a href="../index.html#localizacao">Localização</a>
+            <a href="../index.html#faq">Perguntas Frequentes</a>
+            <a href="../index.html#contato">Contato</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Informações</p>
+          <p class="footer__legal-text">OAB/SP 516.372<br><br>Praça Anuor Nahes, 77<br>Centro — Santa Adélia/SP<br>CEP 15950-029<br><br><a href="mailto:contato@victorbellotti.adv.br" style="color:rgba(255,255,255,0.5);">contato@victorbellotti.adv.br</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Victor Bellotti Advocacia. Todos os direitos reservados.</p>
+        <p class="footer__oab">OAB/SP 516.372</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="../js/main.js"></script>
+  <script>
+    (function(){var c=document.querySelectorAll('.stat-card__number[data-target]');if(!c.length)return;var o=new IntersectionObserver(function(e){e.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,t=parseFloat(el.dataset.target),p=el.dataset.prefix||'',s=el.dataset.suffix||'',d=1400,st=performance.now();function tick(n){var el2=el,prog=Math.min((n-st)/d,1),ease=1-Math.pow(1-prog,3),v=Math.round(t*ease);el2.textContent=p+v+s;if(prog<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);o.unobserve(el)})},{threshold:0.3});c.forEach(function(el){o.observe(el)})}());
+    (function(){var l=document.getElementById('checklist-execucao-bancaria');if(!l)return;var f=document.getElementById('checklist-execucao-bancaria-fill'),lb=document.getElementById('checklist-execucao-bancaria-label'),b=l.querySelectorAll('input[type="checkbox"]'),t=b.length;function u(){var ch=l.querySelectorAll('input:checked').length;if(f)f.style.width=Math.round(ch/t*100)+'%';if(lb)lb.textContent=ch+' de '+t+' itens concluídos'}b.forEach(function(x){x.addEventListener('change',u)});u()}());
+  </script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reestruturação de dívida bancária empresarial: como negociar sem se prejudicar | Victor Bellotti Advocacia</title>
+  <meta name="description" content="Juros que dobram em meses, trava de recebíveis, bola de neve impagável. Saiba como reestruturar o passivo bancário da sua empresa sem ceder às condições abusivas do banco.">
+  <link rel="canonical" href="https://victorbellotti.adv.br/artigos/reestruturacao-divida-bancaria-empresarial.html">
+  <meta name="keywords" content="reestruturação de dívida empresarial, revisão de juros contrato conta pj, dano moral pessoa jurídica stj, defesa em execução de ccb, portabilidade de crédito empresa">
+  <link rel="icon" type="image/png" href="../assets/logo-icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/article.css">
+  <style>
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.25rem;margin:2rem 0}
+    .stat-card{background:var(--color-off-white);border:1px solid var(--color-border);border-top:3px solid var(--color-teal);border-radius:10px;padding:1.25rem 1rem;text-align:center}
+    .stat-card__number{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--color-teal);line-height:1;display:block}
+    .stat-card__label{font-size:.8rem;color:var(--color-navy-600);margin-top:.4rem;line-height:1.35;display:block}
+    .alert-box{border-radius:10px;padding:1.1rem 1.25rem;margin:1.5rem 0;display:flex;gap:.85rem;align-items:flex-start}
+    .alert-box--info{background:#e8f4f8;border-left:4px solid var(--color-teal)}
+    .alert-box--aviso{background:#fff8e1;border-left:4px solid #f59e0b}
+    .alert-box--erro{background:#fef2f2;border-left:4px solid #ef4444}
+    .alert-box__icon{flex-shrink:0;width:20px;height:20px;margin-top:2px}
+    .alert-box--info .alert-box__icon{color:var(--color-teal)}
+    .alert-box--aviso .alert-box__icon{color:#f59e0b}
+    .alert-box--erro .alert-box__icon{color:#ef4444}
+    .alert-box__body{flex:1}
+    .alert-box__title{font-weight:600;font-size:.95rem;margin:0 0 .3rem;color:var(--color-navy-800)}
+    .alert-box__text{font-size:.9rem;color:var(--color-navy-600);margin:0;line-height:1.55}
+    .steps-list{list-style:none;padding:0;margin:1.5rem 0;display:flex;flex-direction:column;gap:1rem}
+    .steps-list__item{display:flex;gap:1rem;align-items:flex-start}
+    .steps-list__num{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--color-teal);color:#fff;font-weight:700;font-size:.95rem;display:flex;align-items:center;justify-content:center;margin-top:1px}
+    .steps-list__body{flex:1}
+    .steps-list__title{font-weight:600;font-size:.95rem;color:var(--color-navy-800);margin:0 0 .25rem}
+    .steps-list__desc{font-size:.88rem;color:var(--color-navy-600);margin:0;line-height:1.55}
+    .case-box{background:linear-gradient(135deg,#f0fafa 0%,#e8f4f8 100%);border:1px solid rgba(0,128,128,.2);border-radius:12px;padding:1.5rem;margin:1.75rem 0}
+    .case-box__header{display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem}
+    .case-box__icon{width:28px;height:28px;background:var(--color-teal);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .case-box__icon svg{width:15px;height:15px;color:#fff}
+    .case-box__label{font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--color-teal-dark)}
+    .case-box__title{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--color-navy-800);margin:0 0 .6rem}
+    .case-box__text{font-size:.9rem;color:var(--color-navy-600);line-height:1.6;margin:0}
+    .faq-item-art{border:1px solid var(--color-border);border-radius:10px;margin-bottom:.75rem;overflow:hidden}
+    .faq-item-art summary{padding:1rem 1.1rem;font-weight:600;font-size:.95rem;color:var(--color-navy-800);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:.75rem}
+    .faq-item-art summary::-webkit-details-marker{display:none}
+    .faq-item-art summary::after{content:'';flex-shrink:0;width:18px;height:18px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23008080' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:contain;transition:transform .25s ease}
+    .faq-item-art[open] summary::after{transform:rotate(180deg)}
+    .faq-item-art[open] summary{color:var(--color-teal)}
+    .faq-item-art__body{padding:0 1.1rem 1rem;font-size:.9rem;color:var(--color-navy-600);line-height:1.65}
+    .checklist-container{background:var(--color-off-white);border:1px solid var(--color-border);border-radius:12px;padding:1.5rem;margin:2rem 0}
+    .checklist-container h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--color-navy-800);margin:0 0 .5rem}
+    .checklist-progress-bar{height:6px;background:var(--color-border);border-radius:99px;margin-bottom:1.25rem;overflow:hidden}
+    .checklist-progress-fill{height:100%;background:var(--color-teal);border-radius:99px;width:0%;transition:width .35s ease}
+    .checklist-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.6rem}
+    .checklist-items label{display:flex;align-items:flex-start;gap:.7rem;cursor:pointer;font-size:.9rem;color:var(--color-navy-600);line-height:1.45}
+    .checklist-items input[type="checkbox"]{flex-shrink:0;width:18px;height:18px;margin-top:1px;accent-color:var(--color-teal);cursor:pointer}
+    .checklist-items input[type="checkbox"]:checked+span{text-decoration:line-through;opacity:.55}
+    .checklist-progress-label{font-size:.8rem;color:var(--color-navy-600);margin-bottom:.4rem;display:block}
+  </style>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="../index.html" class="header__logo" aria-label="Victor Bellotti Advocacia — início">
+          <img src="../assets/logo-horizontal.png" alt="Victor Bellotti Advocacia">
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Navegação principal">
+          <a href="../index.html#inicio">INÍCIO</a>
+          <a href="../index.html#quem-sou">QUEM SOU</a>
+          <div class="nav-dropdown">
+            <a href="../index.html#solucoes" class="nav-dropdown__trigger">SOLUÇÕES <i data-lucide="chevron-down" aria-hidden="true"></i></a>
+            <div class="nav-dropdown__menu">
+              <a href="../solucoes/fraudes-bancarias.html">Fraudes e Golpes Bancários</a>
+              <a href="../solucoes/cobrancas-abusivas.html">Cobranças Abusivas em Contratos PJ</a>
+              <a href="../solucoes/reestruturacao-dividas.html">Reestruturação de Dívidas</a>
+              <a href="../solucoes/consultoria-pre-contratacao.html">Consultoria Pré-Contratação</a>
+              <a href="../solucoes/execucoes-bancarias.html">Execuções Bancárias</a>
+              <a href="../solucoes/garantias-e-avais.html">Garantias e Avais</a>
+            </div>
+          </div>
+          <a href="../etica-e-transparencia.html">ÉTICA</a>
+          <a href="index.html" class="active">ARTIGOS</a>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="../index.html#contato">CONTATO</a>
+        </nav>
+        <div class="header__actions">
+          <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+    <div class="mobile-menu__overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu__drawer">
+      <a href="../index.html#inicio">Início</a>
+      <a href="../index.html#quem-sou">Quem Sou</a>
+      <a href="../index.html#solucoes">Soluções</a>
+      <a href="../etica-e-transparencia.html">Ética</a>
+      <a href="index.html">Artigos</a>
+      <a href="../index.html#localizacao">Localização</a>
+      <a href="../index.html#faq">Perguntas Frequentes</a>
+      <a href="../index.html#contato">Contato</a>
+      <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        Falar pelo WhatsApp
+      </a>
+    </nav>
+  </div>
+
+  <section class="article-hero" style="--hero-image: url('../assets/artigos/reestruturacao-divida-bancaria-empresarial.jpg')">
+    <div class="article-hero-overlay"></div>
+    <div class="article-hero-content">
+      <nav class="article-hero-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Início</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="index.html">Artigos</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Reestruturação de dívida PJ</span>
+      </nav>
+      <span class="article-hero-badge">Direito Bancário Empresarial</span>
+      <h1 class="article-hero-title">Reestruturação de dívida bancária empresarial: como negociar sem se prejudicar</h1>
+    </div>
+  </section>
+
+  <div class="article-back-bar">
+    <div class="article-back-inner">
+      <a href="index.html" class="back-link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Voltar para Artigos
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <div class="article-layout">
+      <article class="article-content">
+
+        <p class="article-lead">Todo o faturamento do mês absorvido pelos débitos do banco. Parcelas que não reduzem o saldo devedor. Trava de recebíveis que paralisa o caixa. O superendividamento bancário empresarial não nasce de má gestão — nasce de contratos estruturalmente desequilibrados. E há um caminho jurídico preciso para desfazê-los.</p>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="32" data-suffix="%">32%</span>
+            <span class="stat-card__label">das MPEs brasileiras operam com endividamento bancário em atraso, tendo os juros como principal obstáculo (SEBRAE 2024)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="25" data-suffix="%+">25%+</span>
+            <span class="stat-card__label">taxa média ao ano em operações de capital de giro PJ — uma das mais altas do mundo (BCB 2023)</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="35" data-prefix="até R$" data-suffix="k">até R$35k</span>
+            <span class="stat-card__label">restituição por venda casada condicionada à reestruturação de crédito empresarial</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__number" data-target="5" data-suffix=" anos">5 anos</span>
+            <span class="stat-card__label">prazo para revisar contratos bancários e recuperar valores cobrados além do limite legal</span>
+          </div>
+        </div>
+
+        <h2>Como a bola de neve toma conta do caixa da empresa</h2>
+        <p>O superendividamento empresarial junto aos bancos geralmente não nasce de má gestão intencional, mas de uma <strong>assimetria brutal na estrutura dos contratos bancários</strong>. Quando a empresa precisa de liquidez e assina uma CCB, o banco aplica um conjunto de mecanismos que fazem a dívida crescer de forma desproporcional:</p>
+        <ul>
+          <li><strong>Juros compostos sobre juros:</strong> a capitalização diária infla o saldo devedor exponencialmente quando há atrasos</li>
+          <li><strong>Multas pesadas + comissão de permanência + juros remuneratórios:</strong> a cobrança cumulada de múltiplos encargos em um único atraso é proibida pelo STJ (Súmula 472) mas ainda praticada</li>
+          <li><strong>Aditivos contratuais automáticos:</strong> o banco oferece a renovação do limite com taxas flutuantes, e o gestor assina sem perceber que está incorporando ilegalidades anteriores ao novo saldo</li>
+          <li><strong>Trava de recebíveis desproporcional:</strong> a conta escrow retém 100% do faturamento, deixando a empresa sem caixa para pagar folha e fornecedores</li>
+        </ul>
+
+        <div class="alert-box alert-box--info">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Súmula 286 STJ: renegociar a dívida não apaga as ilegalidades anteriores</p>
+            <p class="alert-box__text">O STJ pacificou que a renegociação de contrato bancário ou a confissão da dívida não impede a discussão sobre eventuais ilegalidades dos contratos anteriores. Em linguagem empresarial: se você assinou aditivos de refinanciamento para ganhar fôlego, o banco não pode usar esse documento para impedir que sua empresa questione os juros ilegais cobrados antes. Toda a cadeia pode ser auditada.</p>
+          </div>
+        </div>
+
+        <h2>Casos reais: o impacto do passivo descontrolado</h2>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="case-box__label">Caso real</span>
+          </div>
+          <p class="case-box__title">Paulo — distribuidora de alimentos em São Paulo</p>
+          <p class="case-box__text">Paulo assinou uma CCB com alienação fiduciária da frota para renovar os caminhões logísticos. Com a variação abrupta no preço dos combustíveis, o fluxo de caixa encolheu e Paulo atrasou três prestações. O banco, em vez de propor alongamento do prazo, bloqueou o saldo da conta PJ e exigiu pagamento integral e antecipado da dívida, ameaçando busca e apreensão da frota inteira — o que paralisaria a distribuidora de forma irremediável.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <span class="case-box__label">Caso real</span>
+          </div>
+          <p class="case-box__title">Ana — clínica odontológica em Minas Gerais</p>
+          <p class="case-box__text">Para construir novas salas cirúrgicas, Ana tomou crédito com trava de domicílio bancário. Com a crise, o banco passou a reter 100% dos recebíveis da conta escrow para cobrir encargos de atraso — deixando a clínica sem recursos básicos para comprar insumos odontológicos ou repassar valores devidos aos dentistas associados, colocando a operação em colapso total.</p>
+        </div>
+
+        <h2>Quando o banco deve indenizar sua empresa no processo de reestruturação</h2>
+        <p>Abusos durante a cobrança e a renegociação geram obrigação objetiva de indenizar. Três situações frequentes nos tribunais:</p>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 1</span>
+          </div>
+          <p class="case-box__title">Negativação do CNPJ durante negociação formalizada</p>
+          <p class="case-box__text">Indústria de embalagens depositava parcelas judicialmente durante discussão de juros. O banco negativou o CNPJ mesmo com a ordem de suspensão, travando compra de matéria-prima a prazo. Condenação: <strong>R$ 25.000 em danos morais</strong> e baixa imediata da restrição.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 2</span>
+          </div>
+          <p class="case-box__title">Venda casada imposta para liberar reestruturação do crédito</p>
+          <p class="case-box__text">Empresa de tecnologia buscou alongar o prazo da dívida. O banco condicionou a aprovação à compra de seguro de vida corporativo e títulos de capitalização debitados na assinatura. Condenação: devolução integral de <strong>R$ 35.000</strong> com correção monetária desde a data do desconto.</p>
+        </div>
+
+        <div class="case-box">
+          <div class="case-box__header">
+            <div class="case-box__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <span class="case-box__label">Cenário 3</span>
+          </div>
+          <p class="case-box__title">Trava bancária bloqueando 100% do faturamento por atraso único</p>
+          <p class="case-box__text">Varejista teve 100% das vendas em cartão retidas na conta vinculada por atraso de uma parcela — impedindo o pagamento de salários. Tribunais limitaram a retenção a 30% do faturamento e condenaram o banco a pagar <strong>R$ 20.000 em danos morais</strong> pelo risco imposto à operação.</p>
+        </div>
+
+        <h2>7 passos para reestruturar o passivo bancário com segurança</h2>
+        <ol class="steps-list">
+          <li class="steps-list__item">
+            <span class="steps-list__num">1</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Baixe todas as CCBs originais e aditivos dos últimos 5 anos</p>
+              <p class="steps-list__desc">Acesse o portal do banco e faça o download em PDF de todas as Cédulas de Crédito Bancário e respectivos aditivos de renegociação. Esses documentos são a base probatória de toda a estratégia revisional.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">2</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Exija formalmente a Planilha de Evolução da Dívida ao gerente</p>
+              <p class="steps-list__desc">Formalize o pedido por e-mail institucional exigindo a Planilha de Evolução da Dívida — o banco é obrigado a fornecer. Ela demonstra exatamente quais taxas, encargos e multas compõem o saldo devedor atual e é essencial para identificar ilegalidades.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">3</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Projete o fluxo de caixa real para 12 meses com o departamento financeiro</p>
+              <p class="steps-list__desc">Defina com clareza qual é o valor máximo de parcela mensal que a operação consegue absorver sem comprometer a folha e os impostos inadiáveis. Esse número é a base da sua proposta de reestruturação — não o que o banco quer receber.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">4</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Abra conta PJ em outro banco e desvie os recebimentos</p>
+              <p class="steps-list__desc">Abra imediatamente contas em instituições onde a empresa não possui dívida ativa e transfira todo o fluxo de recebíveis de clientes para esses ambientes neutros — protegendo o capital de giro de retenções arbitrárias ou débitos automáticos durante o processo.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">5</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Protocole proposta de repactuação na Ouvidoria do banco</p>
+              <p class="steps-list__desc">De posse das planilhas e contratos, registre na Ouvidoria uma proposta de reestruturação baseada na capacidade real de pagamento, solicitando a exclusão de tarifas e juros capitalizados ilegalmente. Anote o protocolo e o prazo de resposta.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">6</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Registre reclamação no Banco Central com toda a documentação</p>
+              <p class="steps-list__desc">Após a negativa ou omissão da Ouvidoria, formalize a queixa no sistema do Banco Central relatando a recusa em reestruturar em condições legais. Esse registro pressiona a área de compliance e fortalece o dossiê para a ação judicial.</p>
+            </div>
+          </li>
+          <li class="steps-list__item">
+            <span class="steps-list__num">7</span>
+            <div class="steps-list__body">
+              <p class="steps-list__title">Acione assessoria jurídica para Ação Revisional com depósito judicial</p>
+              <p class="steps-list__desc">Frustrada a via administrativa, leve o acervo documental a uma banca especializada para ajuizar Ação Revisional. O advogado solicitará ao juiz a autorização para depositar judicialmente apenas o valor incontroverso — mantendo o CNPJ limpo durante todo o processo.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h2>Erros que transformam a reestruturação em armadilha</h2>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 1: priorizar a parcela do banco antes do FGTS e dos tributos</p>
+            <p class="alert-box__text">Uma dívida com o banco é um passivo civil negociável; o não pagamento de tributos gera execução fiscal imediata com poder de bloquear todo o patrimônio e impedir a emissão de notas fiscais. Sempre priorize regularidade fiscal e trabalhista — deixe a discussão da dívida bancária para o ambiente de negociação.</p>
+          </div>
+        </div>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 2: aceitar renegociação automática pelo aplicativo bancário</p>
+            <p class="alert-box__text">O clique no botão de renegociação do app configura confissão irretratável de dívida — a empresa renuncia à chance de discutir todos os juros extorsivos que inflariam o saldo, concordando em pagar novos juros altíssimos sobre uma base já viciada. Jamais assine consolidações de passivo sem auditoria jurídica prévia.</p>
+          </div>
+        </div>
+
+        <div class="alert-box alert-box--erro">
+          <svg class="alert-box__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+          <div class="alert-box__body">
+            <p class="alert-box__title">Erro 3: tratar o gerente como consultor financeiro neutro</p>
+            <p class="alert-box__text">O gerente atende às metas de lucratividade do conglomerado financeiro e possui metas agressivas de venda de seguros e serviços. Qualquer acordo de reestruturação deve ser baseado nas planilhas do seu contador e nas orientações do corpo de advogados — não na narrativa de "parceria" do gerente da agência.</p>
+          </div>
+        </div>
+
+        <h2>Perguntas frequentes</h2>
+
+        <details class="faq-item-art">
+          <summary>Minha empresa pode entrar com ação mesmo já tendo renegociado a dívida antes?</summary>
+          <div class="faq-item-art__body">
+            <p>Perfeitamente. A assinatura de novos aditivos ou repactuações não convalida ilegalidades anteriores (Súmula 286 STJ). A auditoria jurídica pode retroagir aos contratos matrizes para expurgar todos os vícios na formação do saldo atual — independentemente de quantos aditivos foram assinados.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>O banco pode bloquear minha conta durante a tentativa de negociação?</summary>
+          <div class="faq-item-art__body">
+            <p>Não. A instituição credora é proibida de congelar o acesso aos fundos essenciais da empresa de forma unilateral e arbitrária sem amparo de ordem judicial. O bloqueio retaliativo por questionamento do saldo configura abuso de posição dominante e atrai o dever de reparação moral e material.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>Se pararmos de pagar durante a disputa, o banco pode pedir a falência da empresa?</summary>
+          <div class="faq-item-art__body">
+            <p>A aplicação do pedido de falência por simples cobrança de capital de giro é raríssima e processualmente complexa. O procedimento padrão do banco é ingressar com execução de título extrajudicial visando penhora de ativos — medida da qual a empresa pode e deve se defender via Embargos à Execução.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>A portabilidade de crédito funciona para dívidas já em atraso?</summary>
+          <div class="faq-item-art__body">
+            <p>A Resolução CMN 4.292/2013 permite a transferência de passivos para outras instituições a qualquer momento. Na prática, bancos concorrentes exigem análises severas para comprar dívida negativada. O caminho mais robusto costuma ser a discussão judicial para derrubar os juros abusivos e só então buscar no mercado uma linha de alongamento mais saudável.</p>
+          </div>
+        </details>
+
+        <details class="faq-item-art">
+          <summary>O que acontece com os bens da empresa se não conseguirmos reestruturar administrativamente?</summary>
+          <div class="faq-item-art__body">
+            <p>Caso o banco ingresse com execução judicial, o patrimônio registrado no CNPJ e os recebíveis ficam expostos a penhora eletrônica. Por isso, é imperativo que a defesa processual apresente garantias substitutivas menos gravosas ou aponte os abusos contratuais para frear as apreensões imediatamente.</p>
+          </div>
+        </details>
+
+        <div class="checklist-container">
+          <h3>Checklist: reestruturação de dívida bancária empresarial</h3>
+          <span class="checklist-progress-label" id="checklist-reestruturacao-divida-label">0 de 9 itens concluídos</span>
+          <div class="checklist-progress-bar">
+            <div class="checklist-progress-fill" id="checklist-reestruturacao-divida-fill"></div>
+          </div>
+          <ul class="checklist-items" id="checklist-reestruturacao-divida">
+            <li><label><input type="checkbox"> <span>Organizei arquivo digital com todas as CCBs e aditivos dos últimos 5 anos</span></label></li>
+            <li><label><input type="checkbox"> <span>Solicitei ao banco a planilha evolutiva da dívida com memorial descritivo detalhado</span></label></li>
+            <li><label><input type="checkbox"> <span>Projetei a margem líquida real do caixa para definir capacidade de pagamento</span></label></li>
+            <li><label><input type="checkbox"> <span>Desviei receitas vitais para contas em bancos sem vínculo credor</span></label></li>
+            <li><label><input type="checkbox"> <span>Garanti que impostos e verbas trabalhistas estão sendo pagos em dia</span></label></li>
+            <li><label><input type="checkbox"> <span>Não aprovei aditivos automáticos de novação pelo aplicativo bancário</span></label></li>
+            <li><label><input type="checkbox"> <span>Documentei contrapropostas enviadas ao gerente por e-mail institucional</span></label></li>
+            <li><label><input type="checkbox"> <span>Protocolizei inações bancárias abusivas na ouvidoria e no Banco Central</span></label></li>
+            <li><label><input type="checkbox"> <span>Contratei assessoria jurídica especializada para ajuizar ação revisional</span></label></li>
+          </ul>
+        </div>
+
+      </article>
+
+      <aside class="article-sidebar">
+        <div class="article-sidebar__cta">
+          <div class="article-sidebar__cta-icon" aria-hidden="true">
+            <i data-lucide="trending-down"></i>
+          </div>
+          <h3 class="article-sidebar__cta-title">Dívida bancária asfixiando o caixa da empresa?</h3>
+          <p class="article-sidebar__cta-text">Juros que dobram em meses, trava de recebíveis, bola de neve. Existe caminho jurídico para reestruturar o passivo e recuperar o controle financeiro da sua operação.</p>
+          <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            Falar pelo WhatsApp
+          </a>
+          <a href="../index.html#contato" class="btn btn-outline-teal" style="width:100%;justify-content:center;margin-top:.6rem;">
+            Enviar mensagem
+          </a>
+          <p class="article-sidebar__cta-disclaimer">Consulta inicial gratuita &bull; Atendimento online</p>
+        </div>
+
+        <a href="index.html" class="back-link" style="display:flex;align-items:center;gap:.4rem;margin:1rem 0;">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          Voltar para Artigos
+        </a>
+
+        <div class="related-articles">
+          <h4 class="related-articles__title">Artigos relacionados</h4>
+          <ul class="related-articles__list">
+            <li>
+              <a href="contrato-capital-de-giro-clausulas-prejudiciais.html" class="related-articles__link">
+                <div class="related-articles__img" style="background-image: url('../assets/artigos/contrato-capital-de-giro-clausulas-prejudiciais.jpg')"></div>
+                <div class="related-articles__info">
+                  <span class="related-articles__link-cat">Direito Bancário Empresarial</span>
+                  <span class="related-articles__link-title">Contrato de capital de giro: 5 cláusulas que podem prejudicar seu negócio</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="execucao-bancaria-empresa-como-se-defender.html" class="related-articles__link">
+                <div class="related-articles__img" style="background-image: url('../assets/artigos/execucao-bancaria-empresa-como-se-defender.jpg')"></div>
+                <div class="related-articles__info">
+                  <span class="related-articles__link-cat">Direito Bancário Empresarial</span>
+                  <span class="related-articles__link-title">Execução bancária contra empresa: como se defender</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="../assets/logo-horizontal.png" alt="Victor Bellotti Advocacia" class="footer__logo">
+          <p class="footer__tagline">Advocacia especializada em Direito Bancário Empresarial, com experiência de mercado financeiro.</p>
+          <div class="footer__socials">
+            <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+            <a href="mailto:contato@victorbellotti.adv.br" class="footer__social" aria-label="E-mail"><i data-lucide="mail" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/victorbellottiadv" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Links Rápidos</p>
+          <nav class="footer__links" aria-label="Links rápidos">
+            <a href="../index.html#inicio">Início</a>
+            <a href="../index.html#quem-sou">Quem Sou</a>
+            <a href="../index.html#solucoes">Soluções</a>
+            <a href="../etica-e-transparencia.html">Ética e Transparência</a>
+            <a href="index.html">Artigos</a>
+            <a href="../index.html#localizacao">Localização</a>
+            <a href="../index.html#faq">Perguntas Frequentes</a>
+            <a href="../index.html#contato">Contato</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Informações</p>
+          <p class="footer__legal-text">OAB/SP 516.372<br><br>Praça Anuor Nahes, 77<br>Centro — Santa Adélia/SP<br>CEP 15950-029<br><br><a href="mailto:contato@victorbellotti.adv.br" style="color:rgba(255,255,255,0.5);">contato@victorbellotti.adv.br</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Victor Bellotti Advocacia. Todos os direitos reservados.</p>
+        <p class="footer__oab">OAB/SP 516.372</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <script src="../js/main.js"></script>
+  <script>
+    (function(){var c=document.querySelectorAll('.stat-card__number[data-target]');if(!c.length)return;var o=new IntersectionObserver(function(e){e.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,t=parseFloat(el.dataset.target),p=el.dataset.prefix||'',s=el.dataset.suffix||'',d=1400,st=performance.now();function tick(n){var el2=el,prog=Math.min((n-st)/d,1),ease=1-Math.pow(1-prog,3),v=Math.round(t*ease);el2.textContent=p+v+s;if(prog<1)requestAnimationFrame(tick)}requestAnimationFrame(tick);o.unobserve(el)})},{threshold:0.3});c.forEach(function(el){o.observe(el)})}());
+    (function(){var l=document.getElementById('checklist-reestruturacao-divida');if(!l)return;var f=document.getElementById('checklist-reestruturacao-divida-fill'),lb=document.getElementById('checklist-reestruturacao-divida-label'),b=l.querySelectorAll('input[type="checkbox"]'),t=b.length;function u(){var ch=l.querySelectorAll('input:checked').length;if(f)f.style.width=Math.round(ch/t*100)+'%';if(lb)lb.textContent=ch+' de '+t+' itens concluídos'}b.forEach(function(x){x.addEventListener('change',u)});u()}());
+  </script>
+</body>
+</html>

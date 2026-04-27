@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://victorbellotti.adv.br/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Ética e Transparência -->
+  <url>
+    <loc>https://victorbellotti.adv.br/etica-e-transparencia.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Artigos — listing -->
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artigos — individuais -->
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/cobrancas-indevidas-extrato-bancario-empresa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/contrato-capital-de-giro-clausulas-prejudiciais.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/fraude-bancaria-contra-empresa.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/execucao-bancaria-empresa-como-se-defender.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/reestruturacao-divida-bancaria-empresarial.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/juros-abusivos-contratos-pj.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/artigos/o-que-avaliar-antes-contratar-credito-empresarial.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Soluções -->
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/fraudes-bancarias.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/cobrancas-abusivas.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/reestruturacao-dividas.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/consultoria-pre-contratacao.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/execucoes-bancarias.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://victorbellotti.adv.br/solucoes/garantias-e-avais.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

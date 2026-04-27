@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ética e Transparência | Victor Bellotti Advocacia</title>
+  <meta name="description" content="Conheça os princípios de conduta, compromissos éticos e valores que orientam a atuação da Victor Bellotti Advocacia.">
+  <meta name="author" content="Victor Bellotti">
+  <link rel="canonical" href="https://victorbellotti.adv.br/etica-e-transparencia.html">
+  <meta property="og:title" content="Ética e Transparência | Victor Bellotti Advocacia">
+  <meta property="og:description" content="Os princípios que orientam cada decisão, cada contrato e cada relacionamento com nossos clientes.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="assets/logo-icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .etica-page-hero {
+      background: var(--color-navy-800);
+      padding: 120px 24px 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .etica-page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(45deg, rgba(255,255,255,0.015) 0px, rgba(255,255,255,0.015) 1px, transparent 1px, transparent 60px);
+    }
+    .etica-page-hero-inner {
+      position: relative;
+      max-width: var(--container-wide);
+      margin: 0 auto;
+    }
+    .etica-page-hero .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 32px;
+    }
+    .etica-page-hero .breadcrumb a { color: rgba(255,255,255,0.5); transition: color .2s; }
+    .etica-page-hero .breadcrumb a:hover { color: var(--color-teal); }
+    .etica-page-hero .breadcrumb .sep { font-size: 11px; }
+    .etica-page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 4vw, 56px);
+      color: white;
+      max-width: 700px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .etica-page-hero p {
+      font-size: clamp(16px, 1.5vw, 19px);
+      color: rgba(255,255,255,0.72);
+      max-width: 560px;
+      line-height: 1.7;
+    }
+
+    /* Bloco 1 — Postura */
+    .etica-postura {
+      background: white;
+      padding: 96px 24px;
+    }
+    .etica-postura-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .etica-postura h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3vw, 36px);
+      color: var(--color-navy-800);
+      margin-bottom: 24px;
+      line-height: 1.25;
+    }
+    .etica-postura p {
+      font-size: 17px;
+      color: var(--color-navy-600);
+      line-height: 1.8;
+    }
+
+    /* Bloco 2 — Pilares (grid) */
+    .etica-pilares-section {
+      background: var(--color-off-white);
+      padding: 96px 24px;
+    }
+    .etica-pilares-section-inner {
+      max-width: var(--container-wide);
+      margin: 0 auto;
+    }
+    .etica-pilares-section h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3vw, 36px);
+      color: var(--color-navy-800);
+      margin-bottom: 48px;
+      line-height: 1.25;
+    }
+    .etica-pilares-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 640px) { .etica-pilares-grid { grid-template-columns: 1fr; } }
+
+    .etica-pilar-card {
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .etica-pilar-card .icon-wrap {
+      width: 52px;
+      height: 52px;
+      background: rgba(28,122,140,0.08);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-teal);
+    }
+    .etica-pilar-card .icon-wrap svg { width: 24px; height: 24px; }
+    .etica-pilar-card h3 {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--color-navy-800);
+      line-height: 1.3;
+    }
+    .etica-pilar-card p {
+      font-size: 15px;
+      color: var(--color-slate);
+      line-height: 1.7;
+    }
+
+    /* Bloco 3 — Compromissos */
+    .etica-compromissos {
+      background: white;
+      padding: 96px 24px;
+    }
+    .etica-compromissos-inner {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .etica-compromissos h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3vw, 36px);
+      color: var(--color-navy-800);
+      margin-bottom: 40px;
+      line-height: 1.25;
+    }
+    .etica-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .etica-list-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .etica-list-item .check-icon {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      color: var(--color-teal);
+      margin-top: 2px;
+    }
+    .etica-list-item span {
+      font-size: 16px;
+      color: var(--color-navy-600);
+      line-height: 1.6;
+    }
+
+    /* Bloco 4 — CTA */
+    .etica-cta {
+      background: var(--color-navy-800);
+      padding: 96px 24px;
+      text-align: center;
+    }
+    .etica-cta-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .etica-cta h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3vw, 38px);
+      color: white;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .etica-cta p {
+      font-size: 17px;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="index.html" class="header__logo" aria-label="Victor Bellotti Advocacia — início">
+          <img src="assets/logo-horizontal.png" alt="Victor Bellotti Advocacia">
+        </a>
+        <nav class="header__nav" role="navigation" aria-label="Navegação principal">
+          <a href="index.html#inicio">INÍCIO</a>
+          <a href="index.html#quem-sou">QUEM SOU</a>
+          <div class="nav-dropdown">
+            <a href="index.html#solucoes" class="nav-dropdown__trigger">SOLUÇÕES <i data-lucide="chevron-down" aria-hidden="true"></i></a>
+            <div class="nav-dropdown__menu">
+              <a href="solucoes/fraudes-bancarias.html">Fraudes e Golpes Bancários</a>
+              <a href="solucoes/cobrancas-abusivas.html">Cobranças Abusivas em Contratos PJ</a>
+              <a href="solucoes/reestruturacao-dividas.html">Reestruturação de Dívidas</a>
+              <a href="solucoes/consultoria-pre-contratacao.html">Consultoria Pré-Contratação</a>
+              <a href="solucoes/execucoes-bancarias.html">Execuções Bancárias</a>
+              <a href="solucoes/garantias-e-avais.html">Garantias e Avais</a>
+            </div>
+          </div>
+          <a href="etica-e-transparencia.html" class="active">ÉTICA</a>
+          <a href="artigos/index.html">ARTIGOS</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="index.html#contato">CONTATO</a>
+        </nav>
+        <div class="header__actions">
+          <button class="header__hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu de navegação">
+    <div class="mobile-menu__overlay" aria-hidden="true"></div>
+    <nav class="mobile-menu__drawer">
+      <a href="index.html#inicio">Início</a>
+      <a href="index.html#quem-sou">Quem Sou</a>
+      <a href="index.html#solucoes">Soluções</a>
+      <a href="etica-e-transparencia.html">Ética</a>
+      <a href="artigos/index.html">Artigos</a>
+      <a href="index.html#localizacao">Localização</a>
+      <a href="index.html#faq">Perguntas Frequentes</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        Falar pelo WhatsApp
+      </a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <section class="etica-page-hero">
+    <div class="etica-page-hero-inner">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <a href="index.html">Início</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span>Ética e Transparência</span>
+      </nav>
+      <h1 data-animate>Ética e Transparência</h1>
+      <p data-animate data-animate-delay="1">Os princípios que orientam cada decisão, cada contrato e cada relacionamento com nossos clientes.</p>
+    </div>
+  </section>
+
+  <!-- BLOCO 1 — POSTURA -->
+  <section class="etica-postura">
+    <div class="etica-postura-inner">
+      <h2 data-animate>Uma advocacia construída sobre responsabilidade</h2>
+      <p data-animate data-animate-delay="1">
+        A Victor Bellotti Advocacia nasceu do entendimento de que o relacionamento entre advogado e cliente precisa ser construído sobre bases sólidas: clareza sobre o que é possível, honestidade sobre os riscos e comprometimento real com os resultados. No Direito Bancário Empresarial, onde os impactos financeiros são diretos e mensuráveis, não há espaço para promessas sem respaldo ou estratégias que não se sustentam juridicamente.
+      </p>
+    </div>
+  </section>
+
+  <!-- BLOCO 2 — PILARES -->
+  <section class="etica-pilares-section">
+    <div class="etica-pilares-section-inner">
+      <h2 data-animate>Quatro pilares que guiam nossa atuação</h2>
+      <div class="etica-pilares-grid">
+
+        <div class="etica-pilar-card" data-animate>
+          <div class="icon-wrap" aria-hidden="true">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3>Integridade</h3>
+          <p>Atuamos com total alinhamento aos interesses do cliente. Não aceitamos casos com conflito de interesse e comunicamos com clareza os limites do que é juridicamente viável.</p>
+        </div>
+
+        <div class="etica-pilar-card" data-animate data-animate-delay="1">
+          <div class="icon-wrap" aria-hidden="true">
+            <i data-lucide="eye"></i>
+          </div>
+          <h3>Transparência</h3>
+          <p>Todas as etapas do processo são comunicadas de forma clara e direta. O cliente sabe exatamente o que está acontecendo, quais são as próximas ações e o que esperar em cada fase.</p>
+        </div>
+
+        <div class="etica-pilar-card" data-animate>
+          <div class="icon-wrap" aria-hidden="true">
+            <i data-lucide="handshake"></i>
+          </div>
+          <h3>Comprometimento</h3>
+          <p>Cada caso é tratado com dedicação total. Não trabalhamos com volume — trabalhamos com profundidade, porque entendemos que o resultado financeiro da sua empresa está em jogo.</p>
+        </div>
+
+        <div class="etica-pilar-card" data-animate data-animate-delay="1">
+          <div class="icon-wrap" aria-hidden="true">
+            <i data-lucide="scale"></i>
+          </div>
+          <h3>Imparcialidade</h3>
+          <p>Nossa análise é técnica e objetiva. Apresentamos ao cliente não apenas o que ele quer ouvir, mas o que ele precisa saber para tomar a melhor decisão para o seu negócio.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 3 — COMPROMISSOS PRÁTICOS -->
+  <section class="etica-compromissos">
+    <div class="etica-compromissos-inner">
+      <h2 data-animate>O que você pode esperar na prática</h2>
+      <div class="etica-list">
+
+        <div class="etica-list-item" data-animate>
+          <i data-lucide="check-circle" class="check-icon" aria-hidden="true"></i>
+          <span>Análise honesta do caso antes de qualquer contratação — incluindo quando não há viabilidade jurídica</span>
+        </div>
+
+        <div class="etica-list-item" data-animate>
+          <i data-lucide="check-circle" class="check-icon" aria-hidden="true"></i>
+          <span>Comunicação direta e sem juridiquês em todas as etapas</span>
+        </div>
+
+        <div class="etica-list-item" data-animate>
+          <i data-lucide="check-circle" class="check-icon" aria-hidden="true"></i>
+          <span>Prazos e expectativas realistas, alinhados desde o início</span>
+        </div>
+
+        <div class="etica-list-item" data-animate>
+          <i data-lucide="check-circle" class="check-icon" aria-hidden="true"></i>
+          <span>Sigilo absoluto sobre todas as informações da empresa</span>
+        </div>
+
+        <div class="etica-list-item" data-animate>
+          <i data-lucide="check-circle" class="check-icon" aria-hidden="true"></i>
+          <span>Atuação exclusivamente no interesse do cliente, sem conflitos externos</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO 4 — CTA -->
+  <section class="etica-cta">
+    <div class="etica-cta-inner">
+      <h2 data-animate>Quer conversar sobre o caso da sua empresa?</h2>
+      <p data-animate data-animate-delay="1">Avaliamos a situação com transparência e orientamos sobre as reais possibilidades jurídicas antes de qualquer compromisso.</p>
+      <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-animate data-animate-delay="2">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+        Falar com o advogado
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <img src="assets/logo-horizontal.png" alt="Victor Bellotti Advocacia" class="footer__logo">
+          <p class="footer__tagline">Advocacia especializada em Direito Bancário Empresarial, com experiência de mercado financeiro.</p>
+          <div class="footer__socials">
+            <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="mailto:contato@victorbellotti.adv.br" class="footer__social" aria-label="E-mail"><i data-lucide="mail" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/victorbellottiadv" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Links Rápidos</p>
+          <nav class="footer__links" aria-label="Links rápidos">
+            <a href="index.html#inicio">Início</a>
+            <a href="index.html#quem-sou">Quem Sou</a>
+            <a href="index.html#solucoes">Soluções</a>
+            <a href="etica-e-transparencia.html">Ética e Transparência</a>
+            <a href="artigos/index.html">Artigos</a>
+            <a href="index.html#localizacao">Localização</a>
+            <a href="index.html#faq">Perguntas Frequentes</a>
+            <a href="index.html#contato">Contato</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__col-title">Informações</p>
+          <p class="footer__legal-text">
+            OAB/SP 516.372<br><br>
+            Praça Anuor Nahes, 77<br>
+            Centro — Santa Adélia/SP<br>
+            CEP 15950-029<br><br>
+            <a href="mailto:contato@victorbellotti.adv.br" style="color:rgba(255,255,255,0.5);transition:color .3s ease;">contato@victorbellotti.adv.br</a>
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 Victor Bellotti Advocacia. Todos os direitos reservados.</p>
+        <p class="footer__oab">OAB/SP 516.372</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/message/XHEBHNEV7BLTL1" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

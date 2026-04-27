@@ -1,0 +1,32 @@
+# Environment variables / secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Backup and temp files
+*.bak
+*.tmp
+*.swp
+*~
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node (if ever used)
+node_modules/
+
+# Logs
+*.log
+
+# Rascunhos de conteúdo (não vai ao repositório público)
+artigos-conteudo/
