@@ -1452,7 +1452,7 @@ textarea.form-control {
   font-family: var(--font-serif);
   font-size: clamp(32px, 4vw, 58px);
   color: white;
-  max-width: 780px;
+  max-width: 960px;
   line-height: 1.2;
   margin-bottom: 24px;
   font-weight: 600;
@@ -1461,7 +1461,7 @@ textarea.form-control {
 .hero-content p {
   font-size: clamp(16px, 1.5vw, 19px);
   color: rgba(255, 255, 255, 0.78);
-  max-width: 580px;
+  max-width: 960px;
   line-height: 1.7;
   margin-bottom: 40px;
 }
