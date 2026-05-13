@@ -1828,14 +1828,14 @@ textarea.form-control {
   font-weight: 700;
   color: var(--color-white);
   line-height: 1.2;
-  max-width: 800px;
+  max-width: 960px;
   margin-bottom: 16px;
 }
 
 .page-hero__subtitle {
   font-size: 18px;
   color: rgba(255,255,255,0.72);
-  max-width: 680px;
+  max-width: 960px;
   line-height: 1.7;
 }
 
